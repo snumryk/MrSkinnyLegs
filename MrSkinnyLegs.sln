@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MrSkinnyLegs", "MrSkinnyLegs\MrSkinnyLegs.csproj", "{A8CC2576-C968-45D1-AEB7-1FC1AD30D300}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebSpider", "WebSpider\WebSpider.csproj", "{D01D91A6-323E-4767-98AD-46658FDA4007}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8CC2576-C968-45D1-AEB7-1FC1AD30D300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8CC2576-C968-45D1-AEB7-1FC1AD30D300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8CC2576-C968-45D1-AEB7-1FC1AD30D300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8CC2576-C968-45D1-AEB7-1FC1AD30D300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D01D91A6-323E-4767-98AD-46658FDA4007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D01D91A6-323E-4767-98AD-46658FDA4007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D01D91A6-323E-4767-98AD-46658FDA4007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D01D91A6-323E-4767-98AD-46658FDA4007}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6930E5E-B869-4580-8AD9-4CE91E7182D4}
+	EndGlobalSection
+EndGlobal
