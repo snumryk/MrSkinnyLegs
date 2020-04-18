@@ -6,7 +6,11 @@
         xmlns:local="clr-namespace:MrSkinnyLegs"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FFA09191">
+        <Button Click="StartButton_Click" Name="StartButton" Content="Start" HorizontalAlignment="Center" Margin="0,357,0,0" VerticalAlignment="Top" Height="41" Width="132"/>
+        <TextBox Name="FilePathField" HorizontalAlignment="Left" Margin="31,318,0,0" Text="Insert new book file path" TextWrapping="Wrap" VerticalAlignment="Top" Width="732"/>
+        <TextBox Name="WebAdressField" HorizontalAlignment="Left" Margin="31,266,0,0" Text="Insert web adress" TextWrapping="Wrap" VerticalAlignment="Top" Width="732"/>
+        <TextBlock Name="OutputTextBlock"  HorizontalAlignment="Left" Margin="31,26,0,0" Text="TestOutput" TextWrapping="Wrap" VerticalAlignment="Top" Height="191" Width="732" Background="#FFD6CBCB"/>
 
     </Grid>
 </Window>

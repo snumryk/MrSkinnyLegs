@@ -1,0 +1,9 @@
+C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\WebSpider\bin\Debug\netcoreapp3.1\WebSpider.deps.json
+C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\WebSpider\bin\Debug\netcoreapp3.1\WebSpider.dll
+C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\WebSpider\obj\Debug\netcoreapp3.1\WebSpider.AssemblyInfoInputs.cache
+C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\WebSpider\obj\Debug\netcoreapp3.1\WebSpider.AssemblyInfo.cs
+C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\WebSpider\obj\Debug\netcoreapp3.1\WebSpider.csproj.CoreCompileInputs.cache
+C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\WebSpider\bin\Debug\netcoreapp3.1\WebSpider.pdb
+C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\WebSpider\obj\Debug\netcoreapp3.1\WebSpider.dll
+C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\WebSpider\obj\Debug\netcoreapp3.1\WebSpider.pdb
+C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\WebSpider\obj\Debug\netcoreapp3.1\WebSpider.csprojAssemblyReference.cache
