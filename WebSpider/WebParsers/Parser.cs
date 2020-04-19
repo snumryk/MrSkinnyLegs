@@ -13,16 +13,33 @@ namespace WebSpider
             return await GetTextFromPage(webAdress, "(//div[contains(@class,'desc-text')])[1]");
         }
 
-        private static async System.Threading.Tasks.Task<string> GetTextFromPage(string webAdress, string xathExpression)
+        private static async Task<string> GetTextFromPage(string webAdress, string xathExpression)
+        {
+
+            var pageDocument = await GetWebPage(webAdress);
+            return pageDocument.DocumentNode.SelectSingleNode(xathExpression).InnerText;
+        }
+
+        private static async System.Threading.Tasks.Task<string> GetPagesLinksList()
+        {
+            return null;
+        }
+
+        private static async System.Threading.Tasks.Task<string> GetChaptersLinksList()
+        {
+            return null;
+        }
+
+        private static async System.Threading.Tasks.Task<HtmlDocument> GetWebPage(string webAdress)
         {
             HttpClient client = new HttpClient();
             var response = await client.GetAsync(webAdress);
             var pageContents = await response.Content.ReadAsStringAsync();
             HtmlDocument pageDocument = new HtmlDocument();
             pageDocument.LoadHtml(pageContents);
-            var pageText = pageDocument.DocumentNode.SelectSingleNode(xathExpression).InnerText;
-            return pageText;
+            return pageDocument;
         }
+
 
         Task<string> IParser.GetTextAsync(string webAdress)
         {
