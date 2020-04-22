@@ -19,7 +19,7 @@ namespace MrSkinnyLegs
         {
             _webAdress = WebAdressField.Text;
             _filePath = FilePathField.Text;
-            OutputTextBlock.Text = await Parser.GetBook(_webAdress);
+            await Parser.GetBook(_webAdress, _filePath);
         }
     }
 }

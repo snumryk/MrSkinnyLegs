@@ -15,10 +15,11 @@ C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\MrSkinnyLegs\bin\Debug\netcorea
 C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\MrSkinnyLegs\bin\Debug\netcoreapp3.1\WebSpider.pdb
 C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\MrSkinnyLegs\obj\Debug\netcoreapp3.1\MainWindow.baml
 C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\MrSkinnyLegs\obj\Debug\netcoreapp3.1\MrSkinnyLegs.g.resources
-C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\MrSkinnyLegs\obj\Debug\netcoreapp3.1\MrSkinnyLegs.csproj.CoreCompileInputs.cache
 C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\MrSkinnyLegs\obj\Debug\netcoreapp3.1\MrSkinnyLegs.AssemblyInfoInputs.cache
 C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\MrSkinnyLegs\obj\Debug\netcoreapp3.1\MrSkinnyLegs.AssemblyInfo.cs
 C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\MrSkinnyLegs\obj\Debug\netcoreapp3.1\MrSkinnyLegs.csproj.CopyComplete
 C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\MrSkinnyLegs\obj\Debug\netcoreapp3.1\MrSkinnyLegs.dll
 C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\MrSkinnyLegs\obj\Debug\netcoreapp3.1\MrSkinnyLegs.pdb
 C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\MrSkinnyLegs\obj\Debug\netcoreapp3.1\MrSkinnyLegs.genruntimeconfig.cache
+C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\MrSkinnyLegs\obj\Debug\netcoreapp3.1\MrSkinnyLegs.csproj.CoreCompileInputs.cache
+C:\Users\Andriy Dragan\source\repos\MrSkinnyLegs\MrSkinnyLegs\bin\Debug\netcoreapp3.1\epubsharp.dll

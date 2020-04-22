@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/GQ1mRb2lC10XyJlcbZjEY8ZxPfQarL7+5QtieTPzuRqE8cHqDDoXwrt/eLC4UfMWVQkXzurrYBRDCgXN0sm8g==",
+  "dgSpecHash": "JxQEUrS4xvjgMbi2iADc7J/2WKM84Y7ptQ8jUXIcpabCojPMF4fSj4rD/+Sx8L51Q77SZgCB97fJpoKyQpFsTA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Andriy Dragan\\source\\repos\\MrSkinnyLegs\\WebSpider\\WebSpider.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Andriy Dragan\\.nuget\\packages\\epubsharp\\0.4.2\\epubsharp.0.4.2.nupkg.sha512",
     "C:\\Users\\Andriy Dragan\\.nuget\\packages\\htmlagilitypack\\1.11.23\\htmlagilitypack.1.11.23.nupkg.sha512",
     "C:\\Users\\Andriy Dragan\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Andriy Dragan\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
@@ -62,5 +63,16 @@
     "C:\\Users\\Andriy Dragan\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\Andriy Dragan\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'EPubSharp 0.4.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "EPubSharp",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

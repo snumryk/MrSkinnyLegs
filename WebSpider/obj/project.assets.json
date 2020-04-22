@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "EPubSharp/0.4.2": {
+        "type": "package",
+        "compile": {
+          "lib/3.5/epubsharp.dll": {}
+        },
+        "runtime": {
+          "lib/3.5/epubsharp.dll": {}
+        }
+      },
       "HtmlAgilityPack/1.11.23": {
         "type": "package",
         "dependencies": {
@@ -902,6 +911,20 @@
     }
   },
   "libraries": {
+    "EPubSharp/0.4.2": {
+      "sha512": "y0fBO1OBui3eqwq9V10LB9GUfq/rDAhjveDTNy02NQ8FHpzhx4HHKGKzSUbyAgBypmCO7O4qTSkvRulyEJEiYA==",
+      "type": "package",
+      "path": "epubsharp/0.4.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "epubsharp.0.4.2.nupkg.sha512",
+        "epubsharp.nuspec",
+        "lib/3.5/epubsharp.dll",
+        "lib/epubsharp.dll",
+        "not-found.gif"
+      ]
+    },
     "HtmlAgilityPack/1.11.23": {
       "sha512": "+cgMfM0ks6njN1HjeH157wcF9n9CksuLk4yzKZ3j5/dhC+t1xZ6SZVnksGZZ+6H22Y2RQ6gUEpue4E912271Hg==",
       "type": "package",
@@ -3369,6 +3392,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "EPubSharp >= 0.4.2",
       "HtmlAgilityPack >= 1.11.23"
     ]
   },
@@ -3416,6 +3440,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "EPubSharp": {
+            "target": "Package",
+            "version": "[0.4.2, )"
+          },
           "HtmlAgilityPack": {
             "target": "Package",
             "version": "[1.11.23, )"
@@ -3439,5 +3467,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'EPubSharp 0.4.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "EPubSharp",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

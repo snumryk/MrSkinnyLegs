@@ -5,11 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="EPubSharp" Version="0.4.2" />
     <PackageReference Include="HtmlAgilityPack" Version="1.11.23" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="BookMakers\" />
   </ItemGroup>
 
 </Project>

@@ -8,10 +8,19 @@
     ".NETCoreApp,Version=v3.1": {
       "WebSpider/1.0.0": {
         "dependencies": {
+          "EPubSharp": "0.4.2",
           "HtmlAgilityPack": "1.11.23"
         },
         "runtime": {
           "WebSpider.dll": {}
+        }
+      },
+      "EPubSharp/0.4.2": {
+        "runtime": {
+          "lib/3.5/epubsharp.dll": {
+            "assemblyVersion": "0.4.1.0",
+            "fileVersion": "0.4.1.0"
+          }
         }
       },
       "HtmlAgilityPack/1.11.23": {
@@ -513,6 +522,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "EPubSharp/0.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-y0fBO1OBui3eqwq9V10LB9GUfq/rDAhjveDTNy02NQ8FHpzhx4HHKGKzSUbyAgBypmCO7O4qTSkvRulyEJEiYA==",
+      "path": "epubsharp/0.4.2",
+      "hashPath": "epubsharp.0.4.2.nupkg.sha512"
     },
     "HtmlAgilityPack/1.11.23": {
       "type": "package",

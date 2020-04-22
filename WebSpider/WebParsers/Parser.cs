@@ -1,32 +1,41 @@
 ﻿using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using WebSpider.BookMakers;
 using WebSpider.WebParsers;
 
 namespace WebSpider
 {
     public class Parser: IParser
     {
-        public static async System.Threading.Tasks.Task<string> GetBook(string webAdress)
+        public static async System.Threading.Tasks.Task GetBook(string webAdress, string filePath)
         {
-            string TEST = "https://novelfull.com/index.php/release-that-witch.html?page=1&per-page=50";
-            var MEGATEST = await GetChaptersLinksList(TEST, "//*[@class='chapter-text']");
-            string BookText = "";
-            foreach (var pagelink in MEGATEST)
+            var tempDirectory = Directory.CreateDirectory(Path.Combine(filePath, "Chapters"));
+            //string TEST = "https://novelfull.com/index.php/release-that-witch.html?page=1&per-page=50";
+            var chapterLinks = await GetChaptersLinksList(webAdress, "//*[@class='chapter-text']");
+            foreach (var pagelink in chapterLinks)
             {
                 var page = await GetWebPage(pagelink);
-                var texts = page.DocumentNode.Descendants("p");
-                foreach (var text in texts)
+                var nodes = page.DocumentNode.Descendants("p");
+                var ChapterTexts = new List<string>();
+                var index = pagelink.IndexOf("release-that-witch/");
+                var chapterName = pagelink.Substring(index+19).Replace(".html", ".").TrimEnd() + "txt"; 
+                foreach (var text in nodes)
                 {
-                    BookText += text.InnerText;
+                    string fixedText = text.InnerText.Replace("&mdash", string.Empty)
+                                                    .Replace("&#8220;", string.Empty)
+                                                    .Replace("&#8221;", string.Empty)
+                                                    .Replace("&#8217;", string.Empty);
+                    ChapterTexts.Add(fixedText);
                 }
+                File.WriteAllLines(Path.Combine(tempDirectory.FullName, chapterName), ChapterTexts);
             }
-            return BookText;
-            
-            //return await GetTextFromPage(webAdress, "(//div[contains(@class,'desc-text')])[1]");
+            EPubMaker.MakeBook(filePath);
+            //tempDirectory.Delete(true);
         }
 
         private static async Task<string> GetTextFromPage(string webAdress, string xpathExpression)

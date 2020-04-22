@@ -43,6 +43,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "EPubSharp": {
+              "target": "Package",
+              "version": "[0.4.2, )"
+            },
             "HtmlAgilityPack": {
               "target": "Package",
               "version": "[1.11.23, )"
